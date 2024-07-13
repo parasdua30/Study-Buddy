@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.left-sidebar {
+    background-color: #1f2937;
+    height: 80vh;
+    width: 20%;
+    border-radius: 0.5rem;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 0.75rem;
+}
+
+@media (max-width: 768px) {
+    .left-sidebar {
+        width: 30%;
+    }
+}
+
+@media (max-width: 640px) {
+    .left-sidebar {
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-sidebar {
+        width: 100%;
+        height: auto;
+    }
+}

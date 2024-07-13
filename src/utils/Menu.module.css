@@ -1,0 +1,24 @@
+.menuContainer {
+    @apply absolute px-5 py-1 flex justify-between w-1/4 left-1/2 my-2 rounded-md;
+    transform: translateX(-50%);
+    border: 1px solid white;
+    box-shadow: purple;
+    background-color: black;
+    z-index: 5;
+
+    .iconWrapper {
+        @apply cursor-pointer flex justify-center items-center h-10 w-10 rounded-md;
+
+        &:hover,
+        &.active {
+            background-color: gray;
+        }
+        .icon {
+            color: white;
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+    }
+}
